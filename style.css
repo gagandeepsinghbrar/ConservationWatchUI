@@ -1,0 +1,159 @@
+body{
+      font-family: 'Source Sans Pro', sans-serif;
+      /*background-image: url('http://www.designbolts.com/wp-content/uploads/2012/12/Straws-Tileable-Pattern-For-Website-Background.jpg');*/
+      /*background-color: #215747;*/
+/*      background-image: url('data:image/jpeg;base64,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')
+*/     
+  
+  background-image: url("https://cdn.glitch.com/3193af90-2f7e-4da1-abb8-b6853e666cea%2Fgreen-leaves-plant-1072179.jpg?1540159987989")
+  
+}
+
+
+tr{
+  background-color:#384437;
+
+}
+#mission{
+  font-family: 'Playfair Display', serif;
+  margin-top: 200px;
+  color:white !important;
+  }
+.centerIt{text-align: center;}
+#contentMission{
+  margin-left: 20%;
+  width: 55%;
+  font-size: 20px;
+}
+
+
+    #wrapper{
+    border:1px solid black;
+      height:200px;
+      width:200px;
+    }
+    #questions{
+      
+      height: 500px;
+      width: 400px;
+     
+      float:left;
+      margin:20px 0px 0px 20px;
+      padding:25px;
+      text-align: center; 
+      margin-top:40px;
+    }
+    .questionbox{
+      font-family: 'Slabo 27px', serif;
+      
+      font-size: 20px;
+      height:30px;
+      width:400px;
+    }
+    #animateMeDude{
+      font-size: 30px;
+
+    }
+
+    .timer{
+     
+      
+      position:fixed;
+      top:700px;
+      left:900px;
+      width:250px;
+      height:80px;
+      text-align:center;
+      font-size:2em;
+    
+    }
+    #about{
+      margin-top: 150px;
+      height: 250px;
+      color:white !important;
+    }
+    #tableWrapper{
+      text-align: center;
+      margin-left: 10%;
+      width: 80%;
+      margin-top: 600px;
+      top:50px;
+      color:white !important;
+    }
+    #container{
+      width: 100%;
+      float:left;
+
+    }
+    .item{
+      width: 50%;
+      float: left;
+    }
+   .itemwrapper{
+    
+      display:flex;
+      padding-left: 60px;
+      padding-right: 60px;
+     
+    }
+    .item{
+        
+        width:50%;
+      
+      }
+    #informative{
+      color:white !important;
+      bottom: 0;
+      font-family: 'Dosis', sans-serif;
+/*       font-family: 'Playfair Display', serif; */
+/*       font-family: 'Indie Flower', cursive; */
+      /*position: absolute;*/
+      margin-top: 200px;
+      height: 50px;
+      width: 100%;
+
+    }
+    #mapwrapper{
+      height: 600px;
+      width: 80%;
+      border:1px;
+      margin-top: 40px;
+      margin-left: 10%;
+    }
+    .imagebox{
+      float: left;
+      width: 30%;
+      margin-top:10px;
+    }
+    .detailsBox{
+      float: left;
+      width: 69%;
+      margin-top:12px;
+    }
+   
+    .thumb{
+
+      height: 150px;
+      width: 150px;
+      border-radius: 70px;
+    }
+    
+    .blackA{
+      color:white;
+    }
+    @media screen and (max-width: 600px) {
+  
+      .itemwrapper{
+       display: flex;
+       flex-direction: column;
+       padding-left: 0px;
+      }
+      
+      .item{
+        width: 500px
+      }
+      #tableWrapper{  
+      margin-top:1400px;
+    }
+      
+}

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/> 
+    <title>Protected Areas - NASA Space Apps Hackathon </title> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKKEZEKl8dBbKM0nOx9RV8czlNIcRiUSc"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  
+  
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+  <!-- removed &callback=myMap -->
+</head> 
+<body> 
+<div id="mapwrapper">
+  <div id="container">
+  <span style="font-size: 20px;position: relative;left: 24%;top: 20px;font-family: 'Pangolin', cursive;font-size: 40px;color:white !important;">
+
+   <u>Protected Areas Analysis Map</u>
+
+ </span>
+   <div id="map" style="width:80%;height:500px;margin-left:10%;float:left;margin-top:40px;border-radius: 10px;box-shadow: 10px 10px 5px grey"></div> 
+ 
+  </div>
+
+</div>
+
+ <!--  _______________________  Natural Disasters ______________________________________________-->
+
+ <div id="informative">
+  
+<!--  _______________________  Wrapper ______________________________________________-->
+  <div class="itemwrapper">
+   
+    <span style="text-align: center;margin-left: 25%;font-size: 54px"> <u>Anthropogenic Habitat Loss </u> </span>
+  
+
+  </div>
+  <div class="itemwrapper">
+
+ 
+    <!--  _________________________ Logging_______________________________-->
+    <div class="item"> 
+      <div class="imagebox" >
+          <img src="https://kbforestry.com/wp-content/uploads/2015/10/logging-the-trees.jpg" class="thumb">
+
+      </div>
+      <div class="detailsBox">
+        <h2> <a href="https://en.wikipedia.org/wiki/Logging" class="blackA">
+
+        <u> Logging </u>
+
+         </a></h2>
+        <h4> " There is a sense of urgency about plans to restore rainforest on the mountain, where deforestation continues "</h4>
+
+      </div>
+
+
+    </div>
+    <!--  _______________________ Agriculture ______________________________________________-->
+    <div class="item">
+      
+      <div class="imagebox">
+          <img src="https://www.xylem.com/contentassets/3d66b9017c7b4771ba729c269bfe23c1/agriculture.jpg" class="thumb">
+
+      </div>
+      <div class="detailsBox">
+        <h2> 
+          <a href="https://en.wikipedia.org/wiki/Agriculture" class="blackA">
+
+            <u>  Agriculture </u>
+         
+
+           </a> 
+        </h2>
+        <h4>" Habitat loss poses the greatest threat to species. The world's forests, swamps, plains, lakes, and other habitats continue to disappear "
+            </h4>
+      </div>
+
+    </div>
+    <!--  _______________________   ______________________________________________-->
+  </div>
+
+<!--  _______________________  _____________________________________________-->
+   <div class="itemwrapper">
+
+<!--  _______________________  Urban Development _____________________________________________-->
+
+
+    <div class="item"> 
+
+        <div class="imagebox">
+                  <img src="https://images.theconversation.com/files/148719/original/image-20161205-8030-odvdwn.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip" class="thumb">
+
+              </div>
+              <div class="detailsBox">
+                <h2>
+                <a href="https://en.wikipedia.org/wiki/Urban_planning" class="blackA"> <u> Urban Development
+                </u>
+                 </a>
+                </h2>
+                <h4>" The growth of cities may cause biodiversity to decline by fragmenting or destroying large areas of natural habitat on which many species depend "
+            </h4>
+
+              </div>
+
+    </div>
+
+<!--  _______________________ Mining  _____________________________________________-->
+
+    <div class="item"> 
+
+      <div class="imagebox">
+                <img src="https://www.woodmac.com/siteassets/photography---industry/metals--mining/woodmac_metals_mining_002.jpg?width=800&height=480&mode=crop&center=0.5,0.5" class="thumb">
+
+            </div>
+            <div class="detailsBox">
+              <h2>
+              <a href="https://en.wikipedia.org/wiki/Mining" class="blackA"> <u> Mining   </u></a>
+             </h2>
+              <h4>"Mining is an inherently destructive industry, and the mining effects of even a single operation can have a severe impact on the environment and the wildlife that lives nearby"
+            </h4>
+
+            </div>
+
+
+
+    </div>
+
+<!--  _______________________  _____________________________________________-->
+
+  </div>
+
+<!--  _______________________  _____________________________________________-->
+
+ </div>
+
+  <!--  _______________________ Table to be populated later ______________________________________________-->
+ <div id="tableWrapper">
+    <table style="width:100%;font-family: 'Play', sans-serif;" class="table table-hover" id="tableToPopulate">
+      <tr>
+        <th>Location</th>
+        <th>Description</th> 
+        <th>Category</th>
+         <th>Coordinates </th>
+      </tr>
+    </table>
+</div>
+<!--  _______________________  _____________________________________________-->
+
+<div id="mission">
+    <div id="contentMission">
+      <h1 class="centerIt"> <u>Our Mission </u></h1>
+      <p>
+      The Conservation Watch project aims to educate the public and raise awareness on land degradations all over the protected areas in the world due to natural disasters or anthropogenic activities. Our open source platform encourages non-profit environmental groups or governmental agencies to monitor the abuse of land real-time with NASA’s satellite images and APIs.
+    </p>
+    </div>
+
+</div>
+
+<!--  _______________________  _____________________________________________-->
+<div id="about">
+    <div id="contentMission">
+      <h1 class="centerIt"> <u>About </u> </h1>
+      <p>
+      Project Conservation Watch is the consorted effort of five software engineers who came together under the one vision of improving our planets habitat. It is first conceived during the 2018 NASA Space Apps Challenge, addressing the challenge topic GLOBE-ally.
+    </p>
+    </div>
+
+</div>
+
+<!--  _______________________  _____________________________________________-->
+
+  <div style="font-size:12px;margin-top:0px;color:white !important;text-align:center;height:20px;">
+    	&copy; Conservation Watch |  NASA Space Apps Hackathon 2018
+
+</div>
+<!--  _______________________  _____________________________________________-->
+
+
+  <!--   ______________________________________________________________________________-->
+  
+   <script type="text/javascript"> 
+  
+     // -------------------  The Map Google Maps.    ----------------------------------
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 1.5,
+      center: new google.maps.LatLng(27.366868, 55.391764),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+    // -----------------------------------------------------------------
+    var locations;
+
+    // -----------------------------------------------------------------
+
+    function startPopulating(){
+        var infowindow = new google.maps.InfoWindow();
+
+        var marker, i;
+
+        for (i = 0; i < locations.length; i++) {  
+         
+        
+          marker = new google.maps.Marker({
+            position: new google.maps.LatLng(locations[i]['coordinates'][1], locations[i]['coordinates'][0]),
+            map: map,
+            // icon:'http://twiki.org/p/pub/Plugins/SmiliesPlugin/skull.gif'
+          });
+
+          google.maps.event.addListener(marker, 'click', (function(marker, i) {
+            return function() {
+              infowindow.setContent(`Description : ${locations[i]['title']} <br> Category : ${locations[i]['categories']} <br> Cause: ${locations[i]['description']}`);
+              infowindow.open(map, marker);
+            }
+          })(marker, i));
+        }
+    }
+
+    // -----------------------------------------------------------------
+    function populateTable(){
+      var tableToPopulate=document.getElementById('tableToPopulate');
+      for(var j=0;j<locations.length; j++){
+
+       var rowToInsert=  `<tr>
+        <td> ${locations[j]['title']} </td>
+        <td>${locations[j]['description']}</td> 
+        <td>${locations[j]['categories']}</td>
+         <td>${locations[j]['coordinates'][1]} , ${locations[j]['coordinates'][0]} </td>
+      </tr>`;
+      $("#tableToPopulate").append(rowToInsert);
+      }
+
+    }
+
+    // -----------------------------------------------------------------
+    //older data
+    // 'https://api.myjson.com/bins/1c3tjs'
+// -----------------------------------------------------------------
+// Temporary data : No access to the realtime data : To Be Continued analyzing polygons later...
+     
+    fetch('https://api.myjson.com/bins/17gn14')
+      .then(resp=> resp.json()).then(function(body){
+          locations=body;
+
+          startPopulating();
+          populateTable();
+    })
+
+// -----------------------------------------------------------------
+
+  
+  
+
+
+</script> 
+
+
+</body> 
+</html>
+
